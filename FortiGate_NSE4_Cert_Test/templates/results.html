@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Results</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <p>Your score is: {{ score }} out of {{ total }}</p>
+    <div style="width: 400px;">
+        <canvas id="resultChart"></canvas>
+    </div>
+    <h2>Category-wise Percentages:</h2>
+    <ul>
+        {% for category, percentage in category_percentages.items() %}
+            <li>{{ category }}: {{ percentage }}%</li>
+        {% endfor %}
+    </ul>
+    <h2>Incorrect Questions:</h2>
+    {% for question in incorrect_questions %}
+        <div>
+            <p><strong>{{ question['Category'] }}</strong></p>
+            <p>{{ question['Question'] }}</p>
+            <p>Your Answer: {{ question['UserAnswer'] }}</p>
+            <p>Correct Answer: {{ question['Answer'] }}</p>
+        </div>
+    {% endfor %}
+    <a href="{{ url_for('quiz') }}">Try again</a>
+
+    <script>
+        var ctx = document.getElementById('resultChart').getContext('2d');
+        var resultChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Correct', 'Incorrect'],
+                datasets: [{
+                    label: 'Percentage',
+                    data: [{{ percentage }}, {{ 100 - percentage }}],
+                    backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)']
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form id="quizForm" method="post">
+        {% for question in questions %}
+            <div class="question-block">
+                <h3>{{ question['Category'] }}</h3>
+                <p>{{ question['Question'] }}</p>
+                <label>
+                    <input type="radio" name="question{{ loop.index }}" value="A" required> A) {{ question['A'] }}
+                </label><br>
+                <label>
+                    <input type="radio" name="question{{ loop.index }}" value="B" required> B) {{ question['B'] }}
+                </label>
+            </div>
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,1231 @@
+Routing
+Knowledge Check
+Question: Which objects can you use to create static routes?
+A) ISDB objects
+B) Service objects
+Answer: A
+
+Routing
+Knowledge Check
+"Question: When the Stop policy routing action is used in a policy route, which behavior is expected?"
+A) FortiGate skips over this policy route and tries to match another in the list.
+B) FortiGate routes the traffic based on the regular routing table.
+Answer: B
+
+Routing
+Knowledge Check
+Question: The priority attribute applies to which type or routes?
+A) Static
+B) Connected
+Answer: A
+
+Routing
+Knowledge Check
+Question: Which attribute does FortiGate use to determine the best route for same-protocol duplicate dynamic routes?
+A) Priority
+B) Metric
+Answer: B
+
+Routing
+Knowledge Check
+Question: Which routes are installed on the routing table?
+A) Best active routes
+B) Policy routes
+Answer: A
+
+Routing
+Knowledge Check
+Question: What is the default ECMP algorithm on FortiGate?
+A) Weighted
+B) Source IP
+Answer: B
+
+Routing
+Knowledge Check
+Question: How does FortiGate load balance traffic when using the spillover algorithm in ECMP routing?
+A) Sessions are distributed based on interface threshold
+B) Sessions are distrubted based on route weight
+Answer: A
+
+Routing
+Knowledge Check
+Question: What is the default RPF check method on FortiGate
+A) Feasible path
+B) Strict
+Answer: A
+
+Routing
+Knowledge Check
+Question: Which route lookup scenario satisfies the RPF check for a packet?
+A) Routing table has a route to the destination IP of the packet through the incoming interface.
+B) Routing table has a route for the source IP of the packet through the incoming interface
+Answer: B
+
+Routing
+Knowledge Check
+Question: What is the purpose of link health monitor setting update-static-route?
+A) It creates a new static route for the backup interface.
+B) It removes all static routes associated with an interface detected as dead by the link health monitor.
+Answer: B
+
+Routing
+Knowledge Check
+"Question: When using link health monitoring, which route attribute can you configure to achieve route failover protection?"
+A) Distance
+B) Metric
+Answer: A
+
+Routing
+Knowledge Check
+"Question: What is the distance value for this route? 10.200.2.0/24 [110/2] via 10.200.2.254, [25/0]"
+A) 110
+B) 2
+Answer: A
+
+Routing
+Knowledge Check
+Question: Which CLI command can you use to view standby and inactive routes?
+A) get router info routing-table all
+B) get router info routing-table database
+Answer: B
+
+Routing
+Knowledge Check
+Question: Which CLI packet capture verbosity level prints interface names?
+A) 3
+B) 4
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which traffic is always generated from the management VDOM?
+A) Link Health Monitor
+B) FortiGuard
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which statement about the management VDOM is true?
+A) It is root by defaut and cannot be changed in multi-vdom mode.
+"B) It is root by default, but can be changed to any VDOM in multi-vdom mode."
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which type of administrator can make changes to all VDOMs?
+A) A custom VDOM administrator
+B) An administrator with the super_admin profile
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which statement about VDOM administrators is true?
+A) There can only be one administrator per VDOM
+B) Each VDOM can have multiple administrators
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which configuration settings are global settings?
+A) Firewall policies
+B) FortiGuard settings
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which configuration settings are per-VDOM settings?
+A) Host name
+B) NGFW mode
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: What is a requirement for creating an inter-VDOM link between two VDOMs?
+A) The NGFW mode of at least one VDOM must be profiled based.
+B) At least one of the VDOMs must be operating in NAT mode
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which type of VDOM link requires that both sides of the link be assigned an IP address within the same subnet?
+A) NAT-to-transparent
+B) NAT-to-NAT
+Answer: B
+
+Virtual Domains (VDOMs)
+Knowledge Check
+"Question: Of these options, what is a possible reason why administrator might not be able to gain to a specific VDOM?"
+A) The administrator is using an IP address that is not specified as a trusted host.
+B) The administrator is using the super_admin profile
+Answer: A
+
+Virtual Domains (VDOMs)
+Knowledge Check
+Question: Which troubleshooting tool is most suitable when trying to verify the firewall policy used by an inter-VDOM link?
+A) Sniffer trace
+B) Packet flow trace
+Answer: B
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+"Question: In FSSO, FortiGate allows network access based on _____."
+A) Active user authentication with username and password
+"B) Passive user identification by user ID, IP address, and group membership"
+Answer: B
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+Question: Which working mode is used for monitoring user sign-on activities in Windows AD?
+A) Polling mode (collector agent-based or agentless)
+B) eDirectory agent mode
+Answer: A
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+Question: Which is the recommended mode for FSSO deployments?
+A) DC agent mode
+B) Polling mode: Agentless
+Answer: A
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+Question: Which FSSO mode requires more FortiGate system resources (CPU and RAM)?
+A) Polling mode: Collector agent-based
+B) Polling mode: Agentless
+Answer: B
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+"Question: If you have collector agents using either DC agent mode or the collector agent-based polling mode, which fabric connector should you select on FortiGate?"
+A) Poll ACtive Directory Server
+B) Fortinet Single Sign-On Agent
+Answer: B
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+Question: Which naming conventions does the FSSO collector agent use to access the Windows AD in Standard access mode?
+A) Windows convention - NetBios: Domain\groups
+"B) LDAP convention: CN=User,OU=Name,DC=Domain"
+Answer: A
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+Question: Which logging levels show the login events on the collector agent?
+A) Information
+B) Warning
+Answer: A
+
+Fortinet Single Sign-On (FSSO)
+Knowledge Check
+Question: The command diagnose debug fsso-polling detail displays information for which mode of FSSO?
+A) Agentless polling
+B) Collector agent-based polling
+Answer: A
+
+ZTNA
+Knowledge Check
+Question: Which component issues and signs the client certificate?
+A) FortiClient EMS
+B) FortiClient
+Answer: A
+
+ZTNA
+Knowledge Check
+Question: Which internet browser supports Fortinet ZTNA
+A) Firefox
+B) Chrome
+Answer: B
+
+ZTNA
+Knowledge Check
+Question: Which remote access solution proxies HTTP and TCP over secure HTTPS connection?
+A) ZTNA
+B) IPSec
+Answer: A
+
+ZTNA
+Knowledge Check
+Question: What does FortiClient EMS integration ensure
+A) Device identification
+B) User identification
+Answer: A
+
+SSL VPN
+Knowledge Check:
+Question: What does a VPN do?
+A) Extends a private network across a public network
+B) Protects a network from external attacks
+Answer: A
+
+SSL VPN
+Knowledge Check
+Question: Which statement about SSL VPNs is true?
+A) An SSL VPN can be established between workstation and a FortiGate device only.
+B) An SSL VPN can be established between an end-user workstation and a FortiGate device or two FortiGate devices.
+Answer: B
+
+SSL VPN
+Knowledge Check
+Question: A web-mode SSL VPN user connects to a remote web server. What is the source IP address of the HTTP request the web server receives?
+A) The remote user IP address
+B) The FortiGate device internal IP address
+Answer: B
+
+SSL VPN
+Knowledge Check
+Question: Which statement about tunnel-mode SSL VPN is correct?
+A) It supports split tunneling
+B) It requires bookmarks
+Answer: A
+
+SSL VPN
+Knowledge Check
+Question: A web-mode SSL VPN user uses _____ to access internal network resources.
+A) Bookmarks
+B) FortiClient
+Answer: A
+
+SSL VPN
+Knowledge Check
+Question: Which step is necessary to configure SSL VPN connections?
+A) Create a firewall policy from the SSL VPN interface to the resource's interface.
+"B) Enable event logs for SSL VPN traffic: users, VPN, and endpoints"
+Answer: A
+
+SSL VPN
+Knowledge Check
+"Question: Which action may allow internet access in tunnel mode, if the remote network does not allow internet access to SSL VPN users?"
+A) Split-tunneling
+B) Configure the DNS server to use the same DNS server as the client system DNS
+Answer: A
+
+SSL VPN
+Knowledge Check 
+Questions: What does the SSL VPN monitor feature allow you to do?
+"A) Monitor SSL VPN user actions, such as authentication"
+B) Force SSL VPN user disconnections
+Answer: B
+
+SSL VPN
+Knowledge Check
+Question: Which statement about SSL VPN timers is correct?
+A) SSL VPN timers can prevent logouts when SSL VPN users experience long network latency
+B) The login timeout is a non-customizable hard value
+Answer: A
+
+IPSec VPN
+Knowledge Check
+Question: Which IPsec protocol is not supported by FortiGate?
+A) IKEv2
+B) AH
+Answer: B
+
+IPSec VPN
+Knowledge Check
+Question: Which VPN topology is the most fault tolerant?
+A) Full mesh
+B) Hub-and-spoke
+Answer: A
+
+IPSec VPN
+Knowledge Check
+Question: Which type of VPN peer can initiate a VPN tunnel?
+A) Dial-up server
+B) Dial-up client
+Answer: B
+
+IPSec VPN
+Knowledge Check
+Question: On which phase do you configure the algorithms used for traffic encryption?
+A) Phase 1
+B) Phase 2
+Answer: B
+
+IPSec VPN
+Knowledge Check
+Question: Which IKEv1 neotiation mode is faster?
+A) Aggressive
+B) Main
+Answer: A
+
+IPSec VPN
+Knowledge Check
+Question: Which IPsec VPN type is legacy and not recommended for new deployments?
+A) Route-based IPsec VPN
+B) Policy-based IPsec VPN
+Answer: B
+
+IPSec VPN
+Knowledge Check
+Question: What is a configuration requirement for an IPsec tunnel to come up?
+A) A firewall policy accepting traffic on the IPsec tunnel
+B) A route for IPsec traffic
+Answer: A
+
+IPSec VPN
+Knowledge Check
+Question: Which feature should be enabled in a redundant IPsec VPN deployment?
+A) DPD
+B) XAuth
+Answer: A
+
+IPSec VPN
+Knowledge Check
+Question: Which setting determines whether a tunnel is used as primary or backup?
+A) Routing
+B) Firewall policies
+Answer: A
+
+IPSec VPN
+Knowledge Check
+Question: The IPsec monitor widget enables you to bring down the ____ of an IPsec VPN.
+A) Phase 1
+B) The entire tunnel
+Answer: B
+
+IPSec VPN
+Knowledge Check
+"Question: When the remote gateway is set to dial-up user, a static route to the remote network is added to the routing table after ____."
+A) Phase 1 comes up
+B) Phase 2 comes up
+Answer: B
+
+High Availability
+Knowledge Check
+Question: What is a requirement for members to form an HA cluster?
+A) They must have same host name
+B) They must run the same firmware version
+Answer: B
+
+High Availability
+Knowledge Check
+Question: What is the default order criteria (override disabled) for selecting the primary in an HA cluster?
+A) Connected monitor ports > HA uptime> priority > serial number
+B) Priority > HA uptime > connected monitored ports > serial number
+Answer: A
+
+High Availability
+Knowledge Check
+Question: Which information is synchronized in an HA cluster?
+A) Firewall policies and objects
+B) FortiGate host name
+Answer: A
+
+High Availability
+Knowledge Check
+Question: Which one of the following session types can be synchronized in an HA cluster?
+A) BGP peerings
+B) Non-proxy TCP sessions
+Answer: B
+
+High Availability
+Knowledge Check
+Question: An HA failover occurs when the link status of a monitored interface on the ____ goes down.
+A) Primary FortiGate
+B) Secondary FortiGate
+Answer: A
+
+High Availability
+Knowledge Check
+"Question: In an active-passive HA cluster, you can configure virtual clustering between only ____ FortiGate devices with multiple VDOMs."
+A) Two
+B) Four
+Answer: A
+
+High Availability
+Knowledge Check
+Question: Which member is the heartbeat interface IP address 169.254.0.1 assigned to?
+A) The member with the highest serial number
+B) The member with the highest priority
+Answer: A
+
+High Availability
+Knowledge Check
+Question: Which statement about the firmware upgrade process on an HA cluster is true?
+A) You upload the new firmeware to the primary FortiGate only
+B) The members do not reboot
+Answer: A
+
+Diagnostics
+Knowledge Check
+Question: Which CLI command can be used to determine the MAC address of a FortiGate default gateway?
+A) get system arp
+B) get hardware nic
+Answer: A
+
+Diagnostics
+Knowledge Check
+Question: Which CLI command can be used to diagnose a physical layer problem?
+A) execute traceroute
+B) get hardware nic
+Answer: B
+
+Diagnostics
+Knowlege Check
+Question: Which information is displayed in the output of a debug flow?
+A) Incoming interface and matching firewall policy
+B) Matching security profile and traffic log
+Answer: A
+
+Diagnostics
+Knowledge Check
+Question: When is a new TCP session allocated?
+A) When a SYN packet is allowed
+B) When a SYN/ACK packet is allowed
+Answer: A
+
+Diagnostics
+Knowledge Check
+Question: Which action does FortiGate take during memory conserve mode?
+A) Configuration changes are not allowed.
+B) Administrative access is denied
+Answer: A
+
+Diagnostics
+Knowledge Check
+Question: Which threshold is used to determine when FortiGate enters conserve mode?
+A) Green
+B) Red
+Answer: B
+
+Diagnostics
+Knowledge Check
+Question: Which types of information are stored in the crash log?
+A) Process crashes and conserve mode events
+B) Traffic logs and security logs
+Answer: A
+
+Diagnostics
+Knowledge Check
+Question: Which protocol is used to upload new firmware from the console?
+A) HTTP/HTTPS
+B) TFTP
+Answer: B
+
+Introduction and Initial Configuration
+Knowledge Check
+Question: Which is a more accurate description of a modern firewall?
+"A) A device that inspects network traffic at an entry point to the internt and within a simple, easily defined network perimeter"
+"B) A multifunctional device that inspects network traffic from the permimeter or internally, within a network that has many different entry points"
+Answer: B
+
+Introduction and Initial Configuration
+Knowledge Check
+Question: Which solution specific to Fortinet enhances performance and reduces latency for specific features and traffic?
+"A) Acceleration hardware, called SPUs"
+B) Increased RAM and CPU power
+Answer: A
+
+Introduction and Initial Configuration
+Knowledge Check
+Question: Which protocol does FortiGate use to download antivirus and IPS packages?
+A) UDP
+B) TCP
+Answer: B
+
+Introduction and Initial Configuration
+Knowledge Check
+Question: How does FortiGate check content for spam or malicious websites?
+A) Live queries to FortiGuard over UDP or HTTPS
+B) Local verification using a downloaded web filter database locally on FortiGate
+Answer: A
+
+Introduction and Initial Configuration
+Knowledge Check
+Question: How do you restirct logins to FortiGate from only specific IP addresses?
+A) Change FortiGate management interface IP address
+B) Configure a trusted host.
+Answer: B
+
+Introduction and Initial Configuration
+Knowledge Check
+"Question: As a best security practice when configuring administrative access to FortiGate, which protocol should you disable?"
+A) Telnet
+B) SSH
+Answer: A
+
+Introduction and Initial Configuration
+Knowledge Check
+"Question: When configuring FortiGate as a DHCP server, to restrict access by MAC address, what does the Assign IP option do?"
+A) Assigns to a specific IP address to a a MAC address
+B) Dynamically assigns an IP to a MAC address
+Answer: B
+
+Introduction and Initial Configuration
+Knowledge Check
+"Question: When configurating FortiGate as a DNS server, which resolution method uses only the FortiGate DNS database to try to resolve queries?"
+A) Non-recursive
+B) Recursive
+Answer: A
+
+Introduction and Initial Configuration
+Knowledge Check
+"Question: When restoring an encrypted system configuration file, in addition to needing the FortiGate model and firmware version from the time the configuration file was produced, what must you also provide?"
+A) The password to decrypt the file
+B) The private decryption key to decrypt the file
+Answer: A
+
+Introduction and Initial Configuration
+Knowledge Check
+Question: Which document should you consult to increase the changes of success before upgrading or downgrading firmware?
+A) Cookbook
+B) Release Notes
+Answer: B
+
+Firewall Policies
+Knowledge Check
+Question: What criteria does FortiGate use to match traffic to a firewall policy?
+A) Source destination interfaces
+B) Security profiles
+Answer: A
+
+Firewall Policies
+Knowledge Check
+Question: What must be selected in Source field of a firewall policy?
+A) At least one address object or ISDB
+B) At least one source user and one source address object
+Answer: A
+
+Firewall Policies
+Knowledge Check
+"Question: To configure a firewall policy, you must include a firewall policy name when configuring using the ___."
+A) CLI
+B) GUI
+Answer: B
+
+Firewall Policies
+Knowledge Check
+Question: What is the purpose of applying security profiles to a firewall policy?
+A) To allow access to specific subnets
+"B) To protect your network form threats, and control access to specific applications and URLs"
+Answer: B
+
+Firewall Policies
+Knowledge Check
+"Question: If you configure a firewall policy with the any interface, you can view the firewall policy list only in which view? ___."
+A) The By Sequence View
+B) The Interface Pair View
+Answer: A
+
+Firewall Policies
+Knowledge Check
+Question: Which of the following naming formats is correct when configuring a name for a firewall address?
+A) Good_Training
+B) Good(Training)
+Answer: A
+
+Firewall Policies
+Knowledge Check
+Question: What is the purpose of the policy lookup feature on FortiGate?
+A) To find a matching policy based on input criteria
+B) To block traffic based on input criteria
+Answer: A
+
+Network Address Translation
+Knowledge Check
+Question: What is NAT used for?
+A) Preserving IP addresses
+B) Traffic shaping
+Answer: A
+
+Network Address Translation
+Knowledge Check
+Question: What is a benefit of using NAT?
+A) Prevents depletion of IPV4 public address
+B) Enhanced content inspection
+Answer: A
+
+Network Address Translation
+Knowledge Check
+Question: Which statement about NATT66 is true?
+A) It is used to translate addresses between two IPv6 networks
+B) It is NAT between two IPv4 networks
+Answer: A
+
+Network Address Translation
+Knowledge Check
+Question: What is the default IP pool type?
+A) One-to-one
+B) Overload
+Answer: B
+
+Network Address Translation
+Knowledge Check
+Question: Which of the following is the default VIP type?
+A) static-nat
+B) load-balance
+Answer: A
+
+Network Address Translation
+Knowledge Check
+Question: Which statement is true?
+A) Central NAT is not enabled by default
+B) Both central NAT and firewall policy NAT can be enabled together
+Answer: A
+
+Network Address Translation
+Knowledge Check
+Question: What happens if there is no matching central SNAT policy or no central SNAT policy configured?
+A) The egress interface IP will be used.
+B) NAT is not be applied to the firewall session.
+Answer: B
+
+Network Address Translation
+Knowledge Check
+"Question: If the session diagnostic output indicates that a TCP protocol state is proto_state=01, which is true?"
+A) The session is established.
+B) The session is not established.
+Answer: A
+
+Network Address Translation
+Knowledge Check
+Question: An administrator wants to check the total number of TCP sessions for an IP pool named INTERNAL. Which CLI command should the administrator use?
+A) diagnose firewall ippool-all stats INTERNAL
+B) diagnose firewall ippool-all list INTERNAL
+Answer: A
+
+Firewall Authentication
+Knowledge Check
+Question: Which firewall authentication method does FortiGate support?
+A) Local password authentication
+B) Biometric authentication
+Answer: A
+
+Firewall Authentication
+Knowledge Check
+Question: Which type of token can generate OTPs to provide two-factor authentication to users in your network?
+A) FortiToken Mobile
+B) USB FortiToken
+Answer: A
+
+Firewall Authentication
+Knowledge Check
+Question: A remote LDAP user is trying to authenticate with a username and password. How does FortiGate verify the login credentials?
+A) FortiGate queries it's own database for user credentials.
+B) FortiGate sends the user-entered credentials to the remote server for verification.
+Answer: B
+
+Firewall Authentication
+Knowledge Check
+"Question: When FortiGate uses a RADIUS server for remote authentication, which statement about RADIUS is true?"
+A) FortiGate must query the remote RADIUS server using distinguished name (dn)
+B) RADIUS group memberships are provided by the vendor-specific attributes (VSAs) configured on the RADIUS server.
+Answer: B
+
+Firewall Authentication
+Knowledge Check
+Question: What is a valid reply from a RADIUS server to an ACCESS-REQUEST packet from FortiGate?
+A) ACCESS-PENDING
+B) ACCESS-REJECT
+Answer: B
+
+Firewall Authentication
+Knowledge Check
+Question: Which statement about guest user groups is true?
+A) Guest user group accounts are temporary
+B) Guest user group account passwords are temporary
+Answer: A
+
+Firewall Authentication
+Knowledge Check
+Question: Guest accounts are most commonly used for which purposes?
+A) To provide temporary visitor access to corporate network resources
+B) To provide temporary visitor access to wireless networks
+Answer: B
+
+Firewall Authentication
+Knowledge Check
+Question: Firewall policies dictate whether a user or device can or cannot authenticate on a network. Which statement about firewall authentication is true?
+A) Firewall policies can be configured to authenticate certificate users.
+B) The order of the firewall policies always determines whether a user's credentials are determined actively or passively.
+Answer: A
+
+Firewall Authentication
+Knowledge Check
+Question: Which statement about captive portal is true?
+A) Captive portal must be hosted on a FortiGate device.
+B) Captive portal can exempt specific devices from authenticating.
+Answer: B
+
+Firewall Authentication
+Knowledge Check
+Question: Which statement about active authentication is true?
+A) Active authentication is always used before passive authentication.
+"B) The firewall policy must allow the HTTP, HTTPS, FTP, and/or Telnet protocols in order for the user to be prompted for credentials."
+Answer: B
+
+Firewall Authentication
+Knowledge Check
+Question: Which statement best describes the authentication idle timeout feature on FortiGate?
+A) The length of time FortiGate waits for the user to enter their authentication credentials.
+B) The length of time is authenticated user is allowed to remain authenticated without any packets being generated by the host device
+Answer: B
+
+Firewall Authentication
+Knowledge Check
+Question: Which command would you use to identify the IP addresses of all authenticated users?
+A) diagnose firewall auth clear
+B) diagnose firewall auth list
+Answer: B
+
+Logging and Monitoring
+Knowledge Check
+"Question: Which type of logs are application control, web filter, and antivirus?"
+A) Event
+B) Security
+Answer: B
+
+Logging and Monitoring
+Knowledge Check
+"Question: The log ____ contains fields that are common to all log types, such as originating date and time, log identifier, log category, and VDOM."
+A) header
+B) body
+Answer: A
+
+Logging and Monitoring
+Knowledge Check
+Question: Which storage type is preferred for logging?
+A) Remote logging
+B) Hard drive
+Answer: A
+
+Logging and Monitoring
+Knowledge Check
+Question: Which protocol does FortiGate use to send encrypted logs to FortiAnalyzer
+A) OFTPS
+B) SSL
+Answer: A
+
+Logging and Monitoring
+Knowledge Check
+"Question: If you enable reliable logging, which transport protocol will FortiGate use?"
+A) UDP
+B) TCP
+Answer: B
+
+Logging and Monitoring
+Knowledge Check
+"Question: In your firewall policy, which setting must you enable to generate logs on traffic sent through that firewall policy?"
+A) Log Allowed Traffic
+B) Event Logging
+Answer: A
+
+Logging and Monitoring
+Knowledge Check
+"Question: With email alerts, you can trigger alert emails based on _____ or log serverity level."
+A) Event
+B) Threat weight
+Answer: A
+
+Logging and Monitoring
+Knowledge Check
+Question: What happens when logs roll?
+A) It lowers the space requirements needed to contain those logs
+B) They are uploaded to an FTP server
+Answer: A
+
+Logging and Monitoring
+Knowledge Check
+"Question: When you download logs on the GUI, _____"
+A) All logs in the SQL database are downloaded
+"B) Only your current view, including any filters set, are downloaded"
+Answer: B
+
+Certificate Operations
+Knowledge Check
+Question: Which attribute or extension identifies the owner of a certificate?
+A) The subject name in the certificate.
+B) The unique serial number in the certificate
+Answer: A
+
+Certificate Operations
+Knowledge Check
+Question: How does FortiGate determine if a certificate has been revoked?
+A) It checks the CRL that resides on FortiGate
+B) It retrieves the CRL from a directory server
+Answer: A
+
+Certificate Operations
+Knowledge Check
+Question: Which certificate extension and value is required in the FortiGate CA certificate in order to enable full SSL inspection?
+A) CRL DP=ca_arl.arl
+B) cA=True
+Answer: B
+
+Certificate Operations
+Knowledge Check
+Question: Which configuration requires FortiGate to act as a CA for full SSL inspection?
+A) Multiple clients connecting to multiple servers
+B) Protecting the SSL server
+Answer: A
+
+Certificate Operations
+Knowledge Check
+Question: Which CSR enrollment method is supported by FortiGate
+A) Enrollment over Security Transport (EST)
+B) Simple Certificate Enrollment Protocol (SCEP)
+Answer: B
+
+Certificate Operations
+Knowledge Check
+"Question: After a CSSR has been enrooled and imported into FortiGate, the status of the certificate should change to: "
+A) Valid
+B) Pending
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which is the default inspection mode on a firewall policy?
+A) Proxy based
+B) Flow based
+Answer: B
+
+Web Filtering
+Knowledge Check
+Question: How does NGFW policy-based mode differ from profile-based mode?
+A) Policy-based flow inspection supports web profile overrides.
+B) Policy-based flow inspection defines URL filters directly in the firewall policy.
+Answer: B
+
+Web Filtering
+Knowledge Check
+Question: Which statement about proxy-based web filtering is true?
+A) It requires more resources than flow-based
+B) It transparently analyzes the TCP flow of the traffic
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which is a valid action for FortiGuard web catagory filtering?
+A) Allow
+B) Deny
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which is a valid action for static URL filtering?
+A) Exempt
+B) Warning
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which action can be used with the FortiGuard quota feature?
+A) Monitor
+B) Shape
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which statement about web profile overrides is true?
+A) It is used to change the website category
+B) Configured users can activate this setting through an override link on the FortiGuard block page
+Answer: B
+
+Web Filtering
+Knowledge Check
+Question: Which is required to configure YouTube video filtering?
+A) YouTube API key
+B) Username
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which action in video filtering will prevent the videos from playing?
+A) Deny
+B) Block
+Answer: B
+
+Web Filtering
+Knowledge Check
+Question: Which action can be used with video FortiGuard categories?
+A) Authenticate
+B) Monitor
+Answer: B
+
+Web Filtering
+Knowledge Check
+Question: Which statement about blocking the known botnet command and control domains is true?
+A) DNS lookups are checked against the botnet command and control database.
+B) The botnet command and control domains can be enabled on the web filter profile.
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which security profile inspects only the fully qualified domain name?
+A) Web Filter
+B) DNS Filter
+Answer: B
+
+Web Filtering
+Knowledge Check
+Question: Which of the following can act as a local FortiGuard server?
+A) FortiManager
+B) FortiAnalyzer
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which action in URL filtering will bypass all security profiles?
+A) Exempt
+B) Allow
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which of the following is used for matching content in Web Content filtering?
+A) Perl regular expressions
+B) Boolean operators
+Answer: A
+
+Web Filtering
+Knowledge Check
+Question: Which feature can be used for restricting websites or images from search results?
+A) Web Content Filtering
+B) Search Engine Filtering
+Answer: B
+
+Web Filtering
+Knowledge Check
+"Question: You have configured your security profiles, but they are not performing web or DNS inspection. Why?"
+A) The certificate is not installed correctly.
+B) The profile is not associated with the correct firewall policy.
+Answer: B
+
+Application Control
+Knowledge Check
+Question: Which statement about application control is true?
+A) Application control uses the IPS engine to scan traffic for application patterns.
+B) Appliocation control is unable to scan P2P architecture traffic.
+Answer: A
+
+Application Control
+Knowledge Check
+Question: Which statement about the application control database is true?
+A) The application control database is separate from the IPS database
+B) The application control database must be updated manually
+Answer: A
+
+Application Control
+Knowledge Check
+Question: Which statement about application control in the NGFW policy-based configuration is true?
+A) Applications are applied directly to the security policies
+B) The application control profile must be applied to firewall policies
+Answer: A
+
+Application Control
+Knowledge Check
+Question: Which statement about the HTTP block page for application control is true?
+A) It can be used only for web applications.
+B) It works for all types of applications.
+Answer: A
+
+Application Control
+Knowledge Check
+Question: Where do you enable logging of application control events?
+A) Applicaiton control logs are enabled in the firewall policy configuration
+B) Application control logs are enabled on the FortiView Applications page of FortiGate
+Answer: A
+
+Application Control
+Knowledge Check
+Question: Which piece of information is not included in the application event log when using NGFW policy-based mode
+A) Application control profile name
+B) Application Name
+Answer: A
+
+Application Control
+Knowledge Check
+Question: Which protocol does FortiGate use with FortiGuard to receive updates for application control?
+A) UDP
+B) TCP
+Answer: B
+
+Application Control
+Knowledge Check
+Question: Which SSL/SSH inspection method is recommended for use with application control scanning to improve application detection?
+A) Certificate-based inspection profile
+B) Deep-inspeciton profile
+Answer: B
+
+Antivirus
+Knowledge Check
+"Question: If antivirus, grayware, and AI scans are enabled, in what order are they performed?"
+"A) AI scan, followed by grayware scan, followed by antivirus scan"
+"B) Antivirus scan, followed by grayware scan, followed by AI scan"
+Answer: B
+
+Antivirus
+Knowledge Check
+Question: Which databases can be manually selected for use in antivirus scanning?
+A) Extended and Extreme
+"B) Quick, Normal, and Extreme"
+Answer: B
+
+Antivirus
+Knowledge Check
+Question: What three additional features of an antivirus profile are available in proxy-based inspection mode?
+"A) MAPI, SSH, CDR"
+B) Full and quick
+Answer: A
+
+Antivirus
+Knowledge Check
+Question: What antivirus database is limited to specific FortiGate models?
+A) Extended
+B) Extreme
+Answer: B
+
+Antivirus
+Knowledge Check
+Question: What is the default scanning behavior for files over 10 MB?
+A) Allow the file without scanning
+B) Block all large files that exceed the buffer threshold
+Answer: A
+
+Antivirus
+Knowledge Check
+Question: What type of inspection mode can be offloaded using NTurbo hardware acceleration?
+A) Proxy-based
+B) Flow-based
+Answer: B
+
+Antivirus
+Knowledge Check
+Question: What does the logging of oversized files option do?
+A) Enables logging of all files that cannot be scanned because of oversize limits
+B) Logs all filese that are over 5 MB
+Answer: A
+
+Antivirus
+Knowledge Check
+Question: What commands do you use to force FortiGate to check for new antivirus updates?
+A) execute update antivirus
+B) execute update-av
+Answer: B
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: Which IPS action allows traffic and logs the activity?
+A) Allow
+B) Monitor
+Answer: B
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: Which IPS component is updated most frequently?
+A) Protocol decoders
+B) IPS signatures database
+Answer: B
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: Which DoS anomaly sensor can be used to detect and block the probing attempts of a port scanner?
+A) tcp_syn_flood
+B) tcp_port_scan
+Answer: B
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: Which behavior is a characteristic of a DoS attack?
+A) Attempts to exploit a known application vulnerability
+B) Attemps to overload a server with TCP SYN packets
+Answer: B
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: WAF protocol constraints protect against which type of attacks?
+A) Buffer overflow
+B) ICMP Sweep
+Answer: A
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+"Question: To use the wAF feature, which inspection mode should be used in the firewall policy?"
+A) Flow
+B) Proxy
+Answer: B
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: Which chipset uses NTurbo to accelerate IPS sessions?
+A) CP9
+B) SoC4
+Answer: B
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: Which feature requires full SSL inspeciton to maximize its detection capability?
+A) WAF
+B) DoS
+Answer: A
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+Question: Which FQDN does FortiGate use to obtain IPS updates?
+A) update.fortiguard.net
+B) service.fortiguard.com
+Answer: A
+
+Intrusion Prevention and Denial of Service
+Knowledge Check
+"Question: When IPS fail open is triggered, what is the expected behavior, if the IPS fail-open option is set to enabled?"
+A) New packets pass through without inspection
+B) New packets dropped
+Answer: A
+
+Security Fabric
+Knowledge Check
+Question: What is the Fortinet Security Fabric?
+A) A device that can manage all your firewalls
+B) A Fortinet solution that enables communicaiton and visibility among devices of your network
+Answer: B
+
+Security Fabric
+Knowledge Check
+Question: Which combination of devices must participate in the Security Fabric?
+A) A FortiAnalyzer and two or more FortiGate devices
+B) A FortiMail and two or ore FortiGate devices
+Answer: A
+
+Security Fabric
+Knowledge Check
+Question: What are the two mandatory settings of the Security Fabric configuration?
+A) Fabric name and Security Fabric role
+B) Fabric name and FortiManager IP address
+Answer: A
+
+Security Fabric
+Knowledge Check
+Question: From where do you authorize a device to participate in the Security Fabric
+A) From the downstream FortiGate
+B) From the root FortiGate
+Answer: B
+
+Security Fabric
+Knowledge Check
+Question: Why should an administrator extend the Security Fabric to other devices?
+A) To provide a single pane of glass for management and reporting purposes
+B) To eliminate the need to purchase licenses for FortiGate devices in the SEcurity Fabric
+Answer: A
+
+Security Fabric
+Knowledge Check
+What is the purpose of Security Fabric external connectors?
+A) External connectors allow you to integrate multi-cloud support with the Security Fabric
+B) External connectors allow you to conect to the FortiGate command line interface (CLI)
+Question: A
+
+Security Fabric
+Knowledge Check
+Question: Which one is a part of the Security Rating scorecard?
+A) Firewall Policy
+B) Optimization
+Answer: B
+
+Security Fabric
+Knowledge Check
+Question: From which view can an administrator deauthorize a device from the Security Fabric?
+A) From the physical topology view
+B) From the Fortiview
+Answer: A
